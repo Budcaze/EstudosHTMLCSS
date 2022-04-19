@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes 
+        ou simplismente aumente e diminua o tamanho do seu navegador
+    </p>
+    <picture> <!--essa tag serve para indicar a semantica de uma foto-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!--Com o source a gente pode fazer imagens dinâmicas. Sendo srcset o aquivo que eu quero carregar e o media usa o tamanho maxímo do navegador sendo 1050px ele carrega minha nova imagem-->
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+</body>
+</html>
+<!--Temos que usar a ordem do source do menor para o maior-->
