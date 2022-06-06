@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none; /*Aqui eu falo que meu texto não vai ter a decoração, nem a padrão*/
+        }
+
+        a:visited{
+            color: aqua; /*Essa pseudo classe é usada para ver se algo já foi visitado*/
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellow; /*active é uma pseudo classe usada para ver se foi clicado*/
+        }
+
+        a::after{
+            content: ' ok'; /*Aqui temos um pseudoElmento que serve para colocar algo depois daquele seletor. Pseudo elemento mexe diretamente no meu html*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/Budcaze" target="_blank" rel="external">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do Curso em Vídeo</a></li>
+        <li><a href="https://pt.pornhub.com">teste</a></li>
+    </ul>
+</body>
+</html>
