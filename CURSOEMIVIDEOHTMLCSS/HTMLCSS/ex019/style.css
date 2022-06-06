@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*
+class é .
+id é #
+*/
+body{
+    background-color: #ffebcd;
+}
+
+#principal {
+    text-align: center;
+    color: #6b4204;
+}
+.secundario {
+    text-align: center;
+}
+
+.destaque {
+    background-color: #6b4204;
+}
